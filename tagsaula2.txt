@@ -1,0 +1,14 @@
+ATIVIDADE: TAGS
+
+1. Uso de tags nos projetos pesquisados anteriormente:
+Nos repositorios analisados (como projetos de exemplo/estudo e o simplegit-progit), as tags sao usadas para marcar pontos especificos do historico, como versoes lancadas, seguindo geralmente padroes como v1.0, v1.1 ou versionamento semantico (SemVer).
+
+2. Observacoes em outros projetos conhecidos:
+Em projetos maiores e mais maduros, as tags costumam seguir padroes claros (como v1.0.0 ou v2.4.1), marcando commits de lancamento ou marcos importantes do codigo, com mensagens descritivas nas tags anotadas e intervalos de criacao variados conforme o ritmo de releases e correcoes do projeto.
+
+3. Filtragem de tags e associacao a commits:
+Com "git tag -l" e possivel filtrar padroes de nomes de tags (por exemplo, "git tag -l '1.1.*'" ou "git tag -l 'v1.*'"), e com "git show <tag>" e possivel ver os detalhes da tag e do commit associado a ela. Tambem e possivel criar tags apontando para o commit mais recente ou passar o hash de um commit anterior para marcar pontos antigos do historico.
+
+4. Diferenca entre tags anotadas e tags leves:
+- Tag leve (git tag <nome>): funciona basicamente como um ponteiro direto para um commit, sem armazenar informacoes extras como autor ou mensagem propria.
+- Tag anotada (git tag -a <nome> -m "descricao"): cria um objeto completo no banco do Git, guardando metadados como nome/email de quem criou, data e mensagem descritiva.
