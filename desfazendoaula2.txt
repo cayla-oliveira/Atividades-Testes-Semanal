@@ -1,0 +1,19 @@
+ATIVIDADE: DESFAZENDO
+
+1. Criacao e registro do reparo.md:
+Criei o reparo.md com orientacoes sobre o git commit --amend, adicionei ao Stage com git add reparo.md, registrei com git commit -m e confirmei com git log -n 1 --stat.
+
+2. Inclusao do referencias.md no commit anterior:
+Criei o referencias.md a partir da ajuda do Git, adicionei ao Stage e rodei git commit --amend --no-edit para juntar o arquivo ao ultimo commit sem alterar a mensagem.
+
+3. Esvaziamento do reparo.md, Stage e verificacao com diff:
+Zerei o conteudo do reparo.md, mandei para o Stage com git add reparo.md e comparei os estados com git diff --staged (mostrando a remocao das linhas em relacao ao ultimo commit) e git diff (mostrando a area de trabalho em relacao ao Stage).
+
+4. Nova edicao ("Prestes a perder meus dados....") e verificacao de diff:
+Escrevi "Prestes a perder meus dados...." no reparo.md e rodei git diff para ver a diferenca entre a area de trabalho e o Stage, e git diff --staged para ver o que estava preparado no Stage.
+
+5. Remocao do Stage e novas verificacoes:
+Usei git restore --staged reparo.md para tirar o arquivo da area de preparacao e conferi com git status e git diff.
+
+6. Restauracao do arquivo original:
+Usei git restore --worktree reparo.md para descartar as alteracoes locais e voltar ao conteudo registrado no repositorio, conferindo depois com git status.
