@@ -1,0 +1,20 @@
+ATIVIDADE: IGNORANDO ARQUIVOS (GIT)
+
+1. Descreva o resultado esperado para um repositório com um arquivo .gitignore contendo:
+!lib.a
+/TODO
+build/
+doc/*.txt
+doc/**/*.pdf
+
+O resultado esperado é que o Git passe a rastrear normalmente o arquivo lib.a (mesmo que exista alguma regra anterior ignorando arquivos .a), enquanto passa a ignorar o arquivo ou diretório TODO localizado apenas na raiz do repositório, qualquer diretório build/ e seu conteúdo, todos os arquivos .txt que estejam diretamente dentro da pasta doc/ (sem pegar subpastas) e todos os arquivos .pdf dentro da pasta doc/ incluindo todas as suas subpastas.
+
+
+2. Inclusão do arquivo hello.tmp:
+Criado o arquivo hello.tmp no repositório.
+
+3. Observação do status:
+Verificado o status com "git status" antes de adicionar ao repositório, mostrando o hello.tmp como não rastreado (untracked).
+
+4. Configuração para ignorar o arquivo:
+Adicionada a entrada "hello.tmp" no arquivo .gitignore para que o Git passe a ignorá-lo.
