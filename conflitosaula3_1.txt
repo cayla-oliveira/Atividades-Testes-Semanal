@@ -1,0 +1,16 @@
+ATIVIDADE: RESOLUCAO DE CONFLITOS (1) - AULA 3.1
+
+1. Criacao do repositorio de testes e arquivo inicial:
+Criei um repositorio novo (teste-conflitos) na branch main, adicionei o README.md com orientacoes iniciais e registrei o primeiro commit.
+
+2. Alteracao na branch dev:
+Criei e mudei para a branch dev (git checkout -b dev), alterei o README.md complementando as orientacoes iniciais e fiz o commit.
+
+3. Alteracao conflitante na branch main:
+Retornei para a branch main (git checkout main), editei a mesma regiao do README.md indicando onde as orientacoes deveriam ser inseridas e fiz um novo commit, gerando divergencia no historico.
+
+4. Tentativa de merge e observacao do conflito:
+Ao executar "git merge dev" estando na main, o Git interrompeu a mesclagem automatica e acusou conflito de conteudo no README.md (CONFLICT (content): Merge conflict in README.md). Com "git status" o arquivo apareceu como "both modified", e o conteudo exibiu as marcacoes <<<<<<< HEAD, ======= e >>>>>>> dev.
+
+5. Resolucao do conflito e finalizacao:
+Editei o README.md removendo os marcadores de conflito e mantendo as informacoes necessarias de ambos os ramos (tambem testando o fluxo de resolucao), adicionei o arquivo ao Stage com "git add README.md" e conclui a mesclagem com "git commit", consolidando o historico.
