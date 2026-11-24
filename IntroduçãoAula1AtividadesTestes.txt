@@ -1,0 +1,116 @@
+Introdução Aula Testes Atividades (Aula 1)
+ATIVIDADE: E AGORA, JOSÉ? (CASOS CLÁSSICOS E OUTROS CASOS NOTÁVEIS)
+
+Quais são os principais vilões nessas histórias?
+Na minha visão, os principais vilões são a falta de testes mais completos, a pressa na hora de lançar ou atualizar sistemas e o excesso de confiança no software sem pensar no que pode dar errado. No Ariane 5 foi um erro de conversão de variável sem tratamento; no Therac-25 houve falha no código, interface confusa e falta de travas físicas de segurança; já nos casos mais recentes, como AWS S3, CrowdStrike, falhas de atualização da Microsoft e brechas como a Ni8mare ou a do SEI, o problema geralmente vem de comandos ou atualizações mal testadas e falhas de segurança que acabam derrubando tudo de uma vez.
+
+O que poderia ser feito para evitar tais problemas?
+Daria para evitar boa parte disso fazendo testes de limite e de erro antes de colocar o sistema no ar, tendo revisão independente do código e das atualizações, liberando mudanças aos poucos em vez de atualizar tudo de uma vez e criando redundâncias de segurança para que uma única falha não derrube o sistema inteiro.
+
+Como você avalia a qualidade desses softwares?
+São sistemas que até funcionavam bem no cenário normal do dia a dia, mas que deixaram a desejar na confiabilidade e na segurança. Quando aconteceu alguma situação fora do padrão — como uma data diferente, um comando errado ou uma atualização defeituosa — o software não aguentou e falhou feio.
+
+Qual é a relação entre os casos anteriores?
+Todos mostram que um erro aparentemente pequeno no código, na configuração ou na manutenção pode gerar um efeito dominó gigante. Também deixam claro que desenvolvimento, testes, manutenção e segurança andam juntos o tempo todo.
+
+Quais foram os impactos?
+Os impactos variam bastante: no Windows 98 foi um constrangimento enorme ao vivo; nos casos da British Airways, AWS S3, CrowdStrike e SEI da UFU, milhares de pessoas e serviços ficaram parados sem conseguir trabalhar ou viajar; no Ariane 5 e no Bug do Milênio houve prejuízo financeiro bilionário; e no Therac-25 o impacto foi o pior possível, causando sequelas graves e mortes de pacientes.
+Fontes usadas: próprio slide do professor; Britannica (Bug do Milênio);
+relatórios públicos de incidentes da AWS e CrowdStrike; boletins de segurança sobre a vulnerabilidade Ni8mare; Comunicado oficial do SEI/UFU.
+
+
+2. ATIVIDADE: CARACTERÍSTICAS E ASPECTOS
+
+Quais são as características comuns a esses softwares?
+Tanto os softwares bons quanto os ruins costumam ter várias funções, dependem de integração com outros sistemas e precisam de atualizações constantes. A diferença é que os bons são estáveis, previsíveis e fáceis de usar, enquanto os ruins travam, têm interfaces confusas e parecem cheios de remendos.
+
+Quais aspectos definem as questões de qualidade?
+O que define a qualidade na prática é o sistema fazer o que promete sem ficar caindo, ser rápido e leve, ter uma tela fácil de entender, proteger os dados do usuário e permitir que os desenvolvedores façam manutenção sem quebrar outras partes.
+
+O que poderia ser feito para melhorar?
+Ouvir mais o feedback de quem realmente usa o sistema, investir mais tempo em testes automatizados antes de soltar atualizações, manter o código mais organizado e documentado e não deixar a manutenção só para quando o problema já estourou.
+
+Onde os pontos falhos poderiam ser corrigidos?
+Logo no começo do projeto, entendendo melhor o que o usuário precisa; durante a programação, com revisões de código; na fase de testes, simulando erros reais; e na manutenção contínua, corrigindo falhas pela raiz em vez de fazer apenas paliativos.
+
+
+3. ATIVIDADE: CONCEITO DE QUALIDADE DE SOFTWARE --------
+
+Compare as visões de Pressman e Hirama sobre Qualidade de Software. O que há de comum? O que há de diferente?
+O que há de comum é que os dois concordam que qualidade de software vai além de só não ter bug: é entregar algo útil que atenda quem usa e quem pediu o sistema.
+Pressman olha mais para a gestão e o resultado prático (menos manutenção, mais valor e retorno), enquanto Hirama olha para o que cada pessoa envolvida espera (usuário quer facilidade, gerente quer prazo e custo, cliente quer resolver o negócio e dev quer bons padrões).
+
+Tente definir com suas palavras o conceito de Qualidade de Software com base no que foi visto:
+Para mim, qualidade de software é construir um sistema organizado por dentro e eficiente por fora, que cumpra o que foi pedido, seja seguro, fácil de usar e não dê dor de cabeça para manter ou evoluir no futuro.
+
+Na prática, como os aspectos vistos podem contribuir para:
+
+Avaliar a qualidade de um software existente: servem como um roteiro para verificar se o sistema realmente atende aos usuários, se apresenta muitos erros, se é seguro, se tem bom desempenho e se o custo para dar manutenção nele está alto demais.
+
+Construir um novo software com qualidade: ajudam a alinhar desde o início o que cada envolvido espera, organizar o processo de desenvolvimento, aplicar boas práticas de engenharia e testar o sistema continuamente antes da entrega.
+
+
+=======================
+4. ATIVIDADE: NORMAS DE QUALIDADE
+Como as normas definem os aspectos de qualidade enumerados anteriormente?
+As normas organizam a qualidade de software em características e subcaracterísticas bem definidas, dividindo o olhar entre a qualidade do produto em si, a qualidade no uso (experiência real do usuário) e a qualidade do processo de desenvolvimento. Isso ajuda a transformar algo subjetivo em critérios objetivos que podem ser medidos e cobrados.
+
+Tabela de correspondência (Português / Inglês / Definições):
+
+Adequação Funcional (Functional Suitability): capacidade do software fornecer funções que atendam às necessidades explícitas e implícitas quando usado nas condições especificadas.
+Confiabilidade (Reliability): capacidade do sistema desempenhar suas funções sem falhar durante um período de tempo e sob condições determinadas.
+Usabilidade (Usability): grau em que o produto pode ser entendido, aprendido, operado e considerado agradável pelos usuários.
+Eficiência de Desempenho (Performance Efficiency): relação entre o desempenho entregue pelo sistema e a quantidade de recursos utilizados (tempo de resposta, memória, processamento).
+Manutenibilidade (Maintainability): grau de facilidade e eficiência com que o software pode ser modificado para corrigir defeitos, melhorar ou adaptar a novos ambientes.
+Portabilidade (Portability): facilidade com que o software pode ser transferido de um ambiente de hardware, software ou nuvem para outro.
+Compatibilidade (Compatibility): capacidade de um sistema trocar informações com outros ou compartilhar o mesmo ambiente sem prejudicar o funcionamento.
+Segurança (Security): capacidade de proteger informações e dados para que pessoas ou sistemas não autorizados não consigam acessá-los ou alterá-los.
+
+Considerando as diferentes versões de normas, houveram mudanças nessas definições? São significativas?
+Sim, houve mudanças importantes da ISO/IEC 9126 para a ISO/IEC 25010 e para as versões mais novas da família SQuaRE (2023/2024). Elas são significativas porque acompanham a evolução da tecnologia: temas como Segurança e Compatibilidade ganharam peso próprio como características principais.
+
+Considerando as normas mais recentes, comente por que há diferentes categorias de normas dentro da Família SQuaRE.
+A família SQuaRE é dividida em diferentes séries porque cuidar da qualidade envolve etapas distintas. Separar em categorias para requisitos, modelos de qualidade, medição, avaliação e gerenciamento evita misturar regras técnicas de métrica com critérios de experiência do usuário ou gestão, deixando cada documento mais direto e fácil de aplicar dependendo da necessidade do projeto.
+
+
+=======================
+5. ATIVIDADE: MODELOS DE MATURIDADE DE PROCESSOS
+O que representam os níveis 1 ao 5 no CMMI? O que isso implica para as empresas?
+No CMMI, os níveis mostram o grau de organização e previsibilidade dos processos da empresa:
+
+Nível 1: processos imprevisíveis, sem padrão e dependentes do esforço individual da equipe.
+
+Nível 2: os projetos passam a ter planejamento, acompanhamento e controle básicos.
+
+Nível 3 : a empresa cria um padrão único de processos documentados e usados por toda a organização.
+
+Nível 4 : os processos passam a ser controlados por meio de indicadores, dados e métricas estatísticas.
+
+Nível 5 : foco em melhoria contínua e prevenção de problemas usando os dados coletados.
+.
+
+Responda a questão anterior, considerando o modelo MPS-BR.
+O MPS-BR é o modelo brasileiro criado pela SOFTEX e possui 7 níveis de maturidade, indo do nível G (mais básico, parcialmente gerenciado) até o nível A (em otimização, equivalente ao topo do CMMI). Ele foi pensado para permitir uma evolução mais gradual e com custo mais acessível.
+
+Como uma empresa pode se capacitar para usar um modelo de maturidade? Quais são os benefícios disso?
+A empresa se capacita contratando consultoria especializada, treinando a equipe, mapeando e padronizando suas rotinas de desenvolvimento, fazendo avaliações internas e, por fim, passando por uma auditoria oficial. Os principais benefícios são menos erros em produção, mais controle sobre custos e prazos, maior produtividade da equipe e mais credibilidade no mercado.
+
+Pesquise por empresas que sejam certificadas em algum modelo de maturidade.
+ Stefanini, TOTVS, CI&T, Algar Tech e Squadra Tecnologia.
+
+
+6. ATIVIDADE: BOAS PRÁTICAS
+Acesse a página de cada associação profissional indicada, observando os temas principais abordados em seus sites.
+1Pesquise em suas bibliotecas digitais alguns artigos associados ao tema de qualidade de software. Tente baixar ao menos um de cada biblioteca que chame mais a sua atenção sobre o assunto.
+Busquei artigos sobre qualidade de software, testes e manutenção no IEEE Xplore, ACM Digital Library e SOL da SBC, separando os que mais chamam atenção para ler e baixar.
+2Pesquisa sobre os autores indicados e aponte algumas de suas principais obras e contribuições para a área de Qualidade de Software.
+
+Respostas:
+E. W. Dijkstra: programação estruturada e correção de programas. 
+C. A. R. Hoare: lógica de Hoare e verificação de programas. 
+B. Boehm: economia de software e análise de riscos.   
+W. Humphrey: melhoria de processos e maturidade (PSP/TSP/CMMI).   
+D. Parnas: modularidade e ocultamento de informação.   
+Michael Feathers: código legado.   
+Martin Fowler: refatoração.   
+Robert C. Martin: Clean Code e SOLID.   Kent Beck: TDD e XP
