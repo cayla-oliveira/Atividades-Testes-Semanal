@@ -1,0 +1,14 @@
+ATIVIDADE:: REPOSITÓRIOS E PRIMEIROS PASSOS
+1. Pesquise alguns projetos no GitHub e liste ao menos três de seu
+interesse;
+https://github.com/typescript-cheatsheets/react.git - react
+https://github.com/coder/code-server.git - vscode
+https://github.com/angular-ui/bootstrap.git  - bootstrap
+
+2. Escolha uma pasta e clone um desses projetos, observando o quer
+foi gerado;
+3. crie uma pasta "hellogit" e inicialize um novo repositório git nele;
+veri que o que foi criado na pasta;
+4. Crie um arquivo em branco Hello.java e registre no repositório;
+5. Complete com o código para gerar um "Hello World" e repita o
+processo indicando as alterações feitas
