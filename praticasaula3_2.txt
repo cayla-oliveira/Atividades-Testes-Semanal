@@ -1,0 +1,19 @@
+ATIVIDADES PRATICAS - AULA 3.2 (GIT-KATAS)
+
+1. Basic Branching:
+Pratiquei a criacao, listagem e alternancia entre ramos no Git, observando o movimento do ponteiro HEAD e o historico com git log.
+
+2. FF-Merge:
+Pratiquei a mesclagem fast-forward, em que o ponteiro do ramo de destino apenas avanca para o commit mais recente quando nao ha historico divergente.
+
+3. 3-Way-Merge:
+Pratiquei a mesclagem de tres vias entre ramos que divergiram a partir de um ancestral comum, gerando um commit de consolidacao.
+
+4. Merge Conflict:
+Pratiquei a identificacao e resolucao manual de conflitos durante o merge, removendo os marcadores de conflito, adicionando o arquivo ao Stage e finalizando o commit.
+
+5. Merge-Mergesort:
+Pratiquei o fluxo de ramos e mesclagem no cenario proposto pelo exercicio mergesort.
+
+6. Rebase:
+Pratiquei o uso de rebase para reaplicar commits de um ramo sobre outro, reorganizando o historico de forma linear.
