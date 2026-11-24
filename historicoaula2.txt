@@ -1,0 +1,16 @@
+ATIVIDADE: HISTORICO
+
+1. Interpretacao das saidas dos comandos de historico:
+- git log: mostra o historico de commits do repositorio, com hash, autor, data e mensagem de cada registro.
+- git log -p / git log -p -2: exibe as mudancas feitas em cada commit no formato diff (linhas removidas em vermelho e adicionadas em verde). Colocando -2 no final, limita a exibicao aos 2 commits mais recentes. O -p vem de patch e ajuda a revisar alteracoes recentes.
+- git log --stat / --shortstat: mostra quantos arquivos foram alterados e quantas linhas foram inseridas ou removidas em cada commit. O --shortstat omite o detalhamento por arquivo e mostra apenas o resumo geral.
+- git log --pretty=oneline / short / full / fuller: muda o nivel de detalhe da exibicao de cada commit, indo de uma linha resumida (oneline) ate informacoes mais completas como committer e datas (full e fuller).
+- git log --pretty=format:"%h - %an, %ar : %s" --graph: formata a linha com hash curto (%h), autor (%an), data relativa (%ar) e mensagem (%s), e com --graph desenha uma arvore/grafo em ASCII para visualizar ramos e merges.
+- git log --name-only, --name-status e --abbrev-commit: --name-only lista os arquivos alterados, --name-status mostra tambem o tipo de modificacao e --abbrev-commit abrevia o hash.
+- git log --since / --until e filtros por autor/mensagem/codigo: filtram commits por periodo (datas AAAA-MM-DD ou unidades como weeks, days, years), por autor (--author), por termo na mensagem (--grep) ou por adicao/remocao de trecho no codigo (-S).
+
+2. Consulta executada no repositorio com o codigo do Git:
+git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges -- t/
+
+3. Analise e interpretacao dos resultados da consulta:
+A consulta filtra o historico do repositorio oficial do Git exibindo apenas o hash abreviado (%h) e o assunto (%s) dos commits feitos pelo autor "gitster" entre 01/10/2008 e 01/11/2008, ignorando commits de merge (--no-merges) e mostrando somente alteracoes que tocaram a pasta t/ (onde ficam os testes do Git). Na pratica, mostra as mudancas individuais feitas por esse autor na suíte de testes durante outubro de 2008.
