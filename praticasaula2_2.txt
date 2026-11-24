@@ -1,0 +1,19 @@
+ATIVIDADES PRATICAS - AULA 2.2 (GIT-KATAS)
+
+1. Basic Commits:
+Pratiquei o fluxo inicial de versionamento usando git status, git log --oneline --graph, git add e git commit, observando como os arquivos passam de nao rastreados para registrados no historico.
+
+2. Basic Staging:
+Pratiquei a diferenca entre a area de trabalho, o Stage e o repositorio usando git diff, git diff --staged, git restore --staged para tirar do Stage e git restore para descartar alteracoes locais.
+
+3. Tags:
+Pratiquei a consulta, criacao e remocao de tags para marcar pontos importantes no historico do repositorio.
+
+4. Ignore:
+Pratiquei o uso do arquivo .gitignore para impedir o rastreamento de arquivos indesejados e o uso de git rm para remover arquivos do repositorio.
+
+5. Amend:
+Pratiquei a atualizacao do ultimo commit com git commit --amend para ajustar alteracoes ou complementar registros recentes.
+
+6. Basic Cleaning:
+Pratiquei a organizacao e limpeza da area de trabalho no repositorio de testes.
