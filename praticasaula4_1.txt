@@ -1,0 +1,13 @@
+ATIVIDADES PRATICAS - AULA 4.1 (REPOSITORIOS REMOTOS)
+
+1. Criar e configurar um repositorio remoto:
+Criei o repositorio meu_remoto no GitHub, clonei localmente, conferi o estado e o remoto com git remote -v, criei o arquivo readme.md no GitHub com o texto "Como utilizar este repositorio:", verifiquei as alteracoes via linha de comando e renomeei a referencia remota para r1 com "git remote rename origin r1".
+
+2. Sincronizacao, edicao e divergencias:
+Observei as referencias remotas, atualizei o repositorio local com as mudancas do remoto, adicionei ao final do readme.md a linha "1. Leia o Livro Pro Git para revisar os comandos", fiz o commit local e observei as diferencas e divergencias entre local e remoto.
+
+3. Compartilhar um repositorio remoto e enviar dados:
+Adicionei referencia remota adicional, adicionei ao final do readme.md a linha "2. Pratique os comandos com as atividades propostas", fiz o commit, enviei ao remoto com git push, simulei atualizacoes e edicoes em outra copia do repositorio e acompanhei as mudancas com fetch, pull e log.
+
+4. Colaborando com ramos remotos (1 e 2):
+Criei o ramo local dev1, editei o readme.md, fiz commit e configurei o rastreamento no remoto, simulei o recebimento e a criacao do ramo dev2 em outra copia, atualizei com pull, criei o ramo fixes, editei o readme.md, fiz commit e push, mesclei fixes ao ramo principal e removi o ramo fixes local e remotamente.
